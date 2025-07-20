@@ -78,7 +78,7 @@ nav.menu-desktop a{
 
 section.carousel-container{
 	width: 100%;
-	height: 70vh;
+	height: 85vh;
 	position: relative;
 	overflow: hidden;
 }
@@ -886,9 +886,18 @@ section.semi-joias > h2{
 	z-index: 999;
 	width: 40px;
 }
+#div-fixa a {
+	text-decoration: none;
+}
+
+#div-fixa a span {
+	text-decoration: none;
+}
+
 #div-fixa a .flex-itens {
 	display: flex;
 	align-items: center;
+	
 }
 #div-fixa a .flex-itens span {
 	display: block;
@@ -896,10 +905,13 @@ section.semi-joias > h2{
 	margin-left: 8px;
 	min-width: 110px;
 	opacity: 0;
+	color: #000;
+	
 }
 #div-fixa a .flex-itens span.aparecer {
 	transition: 0.5s all;
 	opacity: 1;
+	
 } 
 .whats {
 	animation-name: whats;
