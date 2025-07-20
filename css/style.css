@@ -1052,22 +1052,39 @@ section.semi-joias > h2{
 		max-width: 100%;
 		height: 100%;
 	}
-	section.contato{
-		width: 100%;
-		height: 70px;
-	}
-	.contato .center{
-		max-width: 80;
-		padding: 0 2%;
-	}
-	.contato-icon{
-		width: 20px;
-		padding: 0 1%;
-	}
-	.contato-btn h2{
-		font-size: 25px;
-	}
+section.contato2{
+	background-color: #e7c928;
 }
+.box-contato2 {
+	max-width: 100%;
+	margin: 30px auto;
+	padding: 25px;
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+form input[type="text"],
+form input[type="tel"] {
+	width: 100%;
+	
+}
+form input[type="email"],
+form input[list]{
+	width: 100%;
+}
+form textarea {
+	width: 100%;
+}
+form input:focus,
+
+form textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+form input[type="submit"] {
+	width: 100%;
+}
+
 @media screen and (max-width: 855px){
 	footer.divisao{
 		width: 30%;
