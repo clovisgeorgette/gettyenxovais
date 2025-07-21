@@ -31,7 +31,7 @@ function mostrarImagem(elemento, src) {
   imagem.style.display = "block";
 
   document.onmousemove = function (e) {
-    imagem.style.left = e.pageX + 20 + "px";
+    imagem.style.left = e.pageX + -100 + "px";
     imagem.style.top = e.pageY + 20 + "px";
   };
 }
