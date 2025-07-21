@@ -553,8 +553,15 @@ section.loja > h2{
 	padding: 20px 5px;
 }
 .box-single-loja{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
 	height: 100%;
 	border: 1px solid #467070;
+}
+.box-single-loja p.fixa-fim {
+	margin-top: auto;
 }
 .box-single-loja img{
 	width: 100%;
@@ -574,6 +581,7 @@ section.loja > h2{
 }
 .box-single-loja p{
 	padding: 5px 0;
+	text-align: bottom;
 	font-size: 18px;
 	background-color: #e7c928;
 	color: #051436;
@@ -601,7 +609,14 @@ section.colcha > h2{
 	width: 24%;
 	padding: 20px 5px;
 }
+.box-single-colcha p.fixa-fim {
+	margin-top: auto;
+}
 .box-single-colcha{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
 	height: 100%;
 	border: 1px solid #467070;
 }
@@ -652,8 +667,15 @@ section.mantas > h2{
 	padding: 20px 5px;
 }
 .box-single-mantas{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
 	height: 100%;
 	border: 1px solid #467070;
+}
+.box-single-mantas p.fixa-fim {
+	margin-top: auto;
 }
 .box-single-mantas img{
 	width: 100%;
@@ -701,8 +723,15 @@ section.mesa > h2{
 	padding: 20px 5px;
 }
 .box-single-mesa{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
 	height: 100%;
 	border: 1px solid #467070;
+}
+.box-single-mesa p.fixa-fim {
+	margin-top: auto;
 }
 .box-single-mesa img{
 	width: 100%;
@@ -751,8 +780,15 @@ section.banho > h2{
 	padding: 20px 5px;
 }
 .box-single-banho{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
 	height: 100%;
 	border: 1px solid #467070;
+}
+.box-single-banho p.fixa-fim {
+	margin-top: auto;
 }
 .box-single-banho img{
 	width: 100%;
@@ -801,8 +837,15 @@ section.tapetes > h2{
 	padding: 20px 5px;
 }
 .box-single-tapetes{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
 	height: 100%;
 	border: 1px solid #467070;
+}
+.box-single-tapetes p.fixa-fim {
+	margin-top: auto;
 }
 .box-single-tapetes img{
 	width: 100%;
@@ -851,8 +894,19 @@ section.semi-joias > h2{
 	padding: 20px 5px;
 }
 .box-single-semi-joias{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 300px;
 	height: 100%;
 	border: 1px solid #467070;
+}
+#se-joia a {
+	text-decoration: none;
+	color: #000;
+}
+.box-single-semi-joias p.fixa-fim {
+	margin-top: auto;
 }
 .box-single-semi-joias img{
 	width: 100%;
@@ -958,46 +1012,230 @@ section.semi-joias > h2{
 }
 /*  FIM WHATSAPP */
 
-@media screen and (max-width: 685px){
+@media screen and (max-width: 1149px){
 
-	.mproduto-single{
-		display: block;
+	section.sobre{
+	width: 100%;
+	}
+	section.sobre .tx-sobre p{
+		max-width:100%;
+		padding: 0 2%;
+		text-align: justify;
+	}
+	.tx-sobre{
+		width: 100%;
+	}
+	.tx-sobre h1{
+		max-width: 500px;
+		padding: 0 2%;
+		text-align: center;	
+	}
+	section.sobre .center{
+		padding: 0 2%;
+		width: 80%;
+	}
+	.sobre-img img{
+		width: 50%;
+	}
+	.sobre-img{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	section.produto > .center{
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	
+}
+@media screen and (max-width: 1014px){
+
+	section.contato{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 970px){
+
+	section.contato{
+		width: 100%;
+	}
+	.contato-icon{
+		width: 20%;
+		position: absolute;
+		margin-left: -60px;
+	}
+	.semi-joia-single{
 		width: 100%;
 		padding: 0 2%;
-		margin: 0 auto;
+	}
+	.s-joias .center{
+		width: 100%;
+	}
+	.semi-joia-single img{
+		width: 150px;
+	}
+}
+@media screen and (max-width: 910px){
+		section.sobre{
+		width: 100%;
+	}
+	section.sobre .tx-sobre p{
+		max-width: 600px;
+		padding: 0 2%;
+		text-align: justify;
+		margin: auto;
+		font-size: 18px;
+	}
+	.tx-sobre h1{
+		max-width: 350px;
+		padding: 0 2%;
+		text-align: center;
+		font-size: 30px;
+	}
+	section.sobre center{
+		padding: 0 2%;
+		width: 100px;
+	}
+	.produto-wraper{
+		width: 49%;
+		padding: 15px 2%;
+	}
+}
+@media screen and (max-width: 855px){
+	footer.divisao{
+		width: 30%;
+	}
+	.final{
+		padding: 20px 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 15px 0;
 	}
 	.novidade-single{
-		display: block;
 		width: 100%;
-		margin: 0 auto;
-		padding: 0;
+		padding: 0 2%;
 	}
-    .novidade-single p br{
+	.novidades .center{
+		width: 100%;
+	}
+	.novidade-single img{
+		width: 150px;
+	}
+	.mproduto-single{
+		width: 100%;
+		padding: 0 2%;
+	}
+	.mais-vendidos .center{
+		width: 100%;
+	}
+	.mproduto-single img{
+		width: 150px;
+	}
+	.novidade-single p br{
 		display: none;
 	}
 	.mproduto-single p br{
 		display: none;
 	}
-	section.produto > .center{
-		flex-direction: column;
+	.contato-icon{
+		width: 15%;
+		position: absolute;
+		margin-left: -20px;
+	}
+	.central-atendimento{
+		width: 80%;
+		text-align: center;
+	}
+	.localizacao{
+		width: 80%;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.redes-sociais{
+		text-align: center;
+		padding: 10px 0;
+	}
+	.container-slider-single img{
+		width: 150px;
+	}
+	/* pagina produtos*/
+		section.loja > .center{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
 		justify-content: center;
-		align-items: center;
 	}
-	.produto-wraper{
-		width: 100%;
-		margin-bottom: 10px;
+	.loja-wraper{
+		width: 50%;
+		padding: 20px 5px;
 	}
-	.box-single-produto img{
-		height: auto;
-		width: 100%;
-		
+	section.colcha > .center{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
 	}
-	.box-single-produto{
-		width: 300px;
-		
+	.colcha-wraper{
+		width: 50%;
+		padding: 20px 5px;
 	}
-
-
+	section.mantas > .center{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.mantas-wraper{
+		width: 50%;
+		padding: 20px 5px;
+	}
+	section.mesa > .center{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.mesa-wraper{
+		width: 50%;
+		padding: 20px 5px;
+	}
+	section.banho > .center{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.banho-wraper{
+		width: 50%;
+		padding: 20px 5px;
+	}
+	section.tabetes > .center{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.tapetes-wraper{
+		width: 50%;
+		padding: 20px 5px;
+	}
+	section.semi-joias > .center{
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.semi-joias-wraper{
+		width: 50%;
+		padding: 20px 5px;
+	}
 }
 @media screen and (max-width: 768px) {
 	.menu-mobile{
@@ -1092,187 +1330,48 @@ section.semi-joias > h2{
 		justify-content: center;
 		align-items: center;
 	}
-	.produto-wraper{
-		width: 100%;
-	}
-	.box-single-produto img{
-		height: auto;
-	}
+	
 }
-@media screen and (max-width: 855px){
-	footer.divisao{
-		width: 30%;
-	}
-	.final{
-		padding: 20px 0;
+@media screen and (max-width: 685px){
+	.mproduto-single{
+		display: block;
 		width: 100%;
-		height: 100%;
-		text-align: center;
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		margin: 15px 0;
+		padding: 0 2%;
+		margin: 0 auto;
 	}
 	.novidade-single{
+		display: block;
 		width: 100%;
-		padding: 0 2%;
+		margin: 0 auto;
+		padding: 0;
 	}
-	.novidades .center{
-		width: 100%;
-	}
-	.novidade-single img{
-		width: 150px;
-	}
-	.mproduto-single{
-		width: 100%;
-		padding: 0 2%;
-	}
-	.mais-vendidos .center{
-		width: 100%;
-	}
-	.mproduto-single img{
-		width: 150px;
-	}
-	.novidade-single p br{
+    .novidade-single p br{
 		display: none;
 	}
 	.mproduto-single p br{
 		display: none;
 	}
-	.contato-icon{
-		width: 15%;
-		position: absolute;
-		margin-left: -20px;
-	}
-	.central-atendimento{
-		width: 80%;
-		text-align: center;
-	}
-	.localizacao{
-		width: 80%;
-		text-align: center;
-		margin-top: 10px;
-	}
-	.redes-sociais{
-		text-align: center;
-		padding: 10px 0;
-	}
-	.container-slider-single img{
-		width: 150px;
-	}
-}
-@media screen and (max-width: 862px){
-	ection.loja > .center{
-	display: flex !important;
-	flex-wrap: wrap !important;
-	text-align: center;
-	}
-	.loja-wraper{
-		width: 23% !important;
-		padding: 8px 0px;
-	}
-	
-	
-}
-
-
-@media screen and (max-width: 910px){
-		section.sobre{
-		width: 100%;
-	}
-	section.sobre .tx-sobre p{
-		max-width: 600px;
-		padding: 0 2%;
-		text-align: justify;
-		margin: auto;
-		font-size: 18px;
-	}
-	.tx-sobre h1{
-		max-width: 350px;
-		padding: 0 2%;
-		text-align: center;
-		font-size: 30px;
-	}
-	section.sobre center{
-		padding: 0 2%;
-		width: 100px;
+	section.produto > .center{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
 	}
 	.produto-wraper{
-		width: 49%;
-		padding: 15px 2%;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.box-single-produto img{
+		height: auto;
+		width: 100%;
+		max-width: 300px;
+		
+	}
+	.box-single-produto{
+		width: 300px;
+		max-width: 100%;
+		
 	}
 }
-@media screen and (max-width: 970px){
 
-	section.contato{
-		width: 100%;
-	}
-	.contato-icon{
-		width: 20%;
-		position: absolute;
-		margin-left: -60px;
-	}
-	.semi-joia-single{
-		width: 100%;
-		padding: 0 2%;
-	}
-	.s-joias .center{
-		width: 100%;
-	}
-	.semi-joia-single img{
-		width: 150px;
-	}
-}
-@media screen and (max-width: 1014px){
 
-	section.contato{
-		width: 100%;
-	}
-}
-@media screen and (max-width: 1149px){
-
-	section.sobre{
-	width: 100%;
-	}
-	section.sobre .tx-sobre p{
-		max-width:100%;
-		padding: 0 2%;
-		text-align: justify;
-	}
-	.tx-sobre{
-		width: 100%;
-	}
-	.tx-sobre h1{
-		max-width: 500px;
-		padding: 0 2%;
-		text-align: center;	
-	}
-	section.sobre .center{
-		padding: 0 2%;
-		width: 80%;
-	}
-	.sobre-img img{
-		width: 50%;
-	}
-	.sobre-img{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-	}
-	section.produto > .center{
-		display: flex;
-		width: 100%;
-		flex-wrap: wrap;
-	}
-	section.loja > .center{
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	}
-	.loja-wraper{
-		width: 33%;
-		padding: 15px 2px;
-	}
-}
